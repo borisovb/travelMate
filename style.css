@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar|Lato');
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Kavivanar', sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #80BC92;
+}
+
+#logo {
+    font-family: 'Kavivanar', 'Lato', sans-serif;
+    font-size: 24px;
+    margin-right: auto;
+    display: inline-block;
+    align-self: center;
+}
+
+#logo img {
+    height: 80px;
+    margin-left: 10%;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu ul {
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.authMenu {
+    margin-left: auto;
+    align-self: center;
+}
+
+.authMenu ul {
+    text-decoration: none;
+}
+
+.authMenu li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.authMenu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.headerImgSection {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background: url('img/headerBackground.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.headerContainer {
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+.headerContainer img {
+    width: 200px;
+}
+
+.headerContainer p {
+    font-family: 'Kavivanar', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 200;
+}
+
+.infoSection {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #80BC92;
+}
+
+.infoSection img {
+    width: 64px;
+}
+
+.infoLeft {
+    margin-left: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.infoCenter {
+    margin: auto;
+    align-self: auto;
+    text-align: center;
+}
+
+.infoRight {
+    margin-left: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.joinUsSection {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background: url('img/joinUsBackground.png') no-repeat center;
+    background-size: cover;
+}
+
+.joinUsSection p {
+    font-size: 48px;
+    color: #FFF;
+}
+
+.joinUsSection div {
+    margin: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #80BC92;
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #40A05D;
+    color: #000000;
+}
+
+.titleSection {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #40A05D;
+}
+.titleSection p{
+    margin: auto;
+    font-family: 'Kavivanar', sans-serif;
+    font-size: 24px;
+}
+.wrapper{
+    display: flex;
+}
+.mainSection {
+    margin: auto;
+    padding-left: 2%;  
+}
+aside {
+    margin: auto;
+    padding-right: 10%;  
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #80BC92;
+}
+
+.footerMenu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footerMenu li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.footerLeftSide {
+    margin: auto;
+}
+
+.footerLeftSide p {
+    font-weight: bold;
+}
+
+.footerRightSide {
+    margin: auto;
+}
+
+.footerLogo {
+    display: inline;
+}
+
+.footerLogo img {
+    width: 32px;
+}
+
+.footerCopyright {
+    display: inline;
+    font-size: 12px;
+}
+
+.footerCopyright a {
+    text-decoration: none;
+    color: #000;
+}
+
+@-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to { 
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  .gear
+  {
+      -webkit-animation-name:             rotate; 
+      -webkit-animation-duration:         60s; 
+      -webkit-animation-iteration-count:  infinite;
+      -webkit-animation-timing-function: linear;
+  }
