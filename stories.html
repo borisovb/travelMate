@@ -7,30 +7,35 @@
     <title>Travel Mate | Stories</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="#" />
+                <a href="index.html">
+                    <img src="img/logoText.png" />
+                </a>
             </div>
-            <span>TravelMate</span>
             <ul class="menu">
                 <li class="home">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="stories">
-                    <a class="active" href="#">Stories</a>
+                    <a class="active" href="stories.html">Stories</a>
                 </li>
                 <li class="info">
-                    <a href="#">Useful Info</a>
+                    <a href="info.html">Useful Info</a>
                 </li>
                 <li class="about">
-                    <a href="#">About</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
-            <ul>
+
+            <ul class="authMenu">
                 <li class="login">
                     <a href="#">Login</a>
                 </li>
@@ -38,92 +43,93 @@
                     <a href="#">Register</a>
                 </li>
             </ul>
+            
         </nav>
-        <section class="headerImgSection">
-            <img src="#" class="Headerlogo" />
-            <p>TravelMate</p>
-            <p>Travel from home</p>
-        </section>
     </header>
-
-    
-    <section>
-    <article> 
-        <h2>Title of the page</h2>
-            <img scr="#">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div>11.11.18</div>
-    </article> 
-    <article> 
-        <h2>Title of the page</h2>
-            <img scr="#">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div>11.11.18</div>
-    </article> 
-    <article> 
-        <h2>Title of the page</h2>
-            <img scr="#">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div>11.11.18</div>
-    </article> 
-    <article> 
-        <h2>Title of the page</h2>
-            <img scr="#">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div>11.11.18</div>
-    </article> 
+    <section class="titleSection">
+        <p> Stories </p>
     </section>
-    <aside>
+    <section class="secTitleSection">
+        <div class="secNav">
+            <a href="#">Latest stories</a>
+             <a href="#">By Continent</a>
+        </div>
+    </section>
 
-        <a href="#">Suggest a story</a>
-        <a href="#">Latest Stories</a>
-        <p>By Continents</p>
-            <select>      
-                <option value="Europa">Europe</option>
-                <option value="Asia">Asia</option>
-                <option value="Australia">Australia</option>
-                <option value="North America">North America</option>
-                <option value="South America">South America</option>
-                <option value="Africa">Africa</option>
-                <option value="Antarctica">Antartica</option>
-            </select>
-        <p>By Countries</p>
-            <select>      
-                <option value="Moldova">Moldova</option>
-                <option value="Netherlands">Netherlands</option>
-                <option value="China">China</option>
-            </select>
+
+
+    <div class="wrapper">
+    <section clas="mainSection">
+        <article class="story"> 
+           <img src="https://i.imgur.com/J3Xq0z5.jpg">
+      <div class="storyContent"> 
+       <h2>Title of the page</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="storyDate"><strong>Date: </strong> 11.11.18</p>
+        <a href="#">Read more...</a>
+    </div>
+        </article> 
+           <article class="story"> 
+           <img src="https://i.imgur.com/J3Xq0z5.jpg">
+      <div class="storyContent"> 
+       <h2>Title of the page</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="storyDate"><strong>Date: </strong> 11.11.18</p>
+        <a href="#">Read more...</a>
+    </div>
+        </article> 
+           <article class="story"> 
+           <img src="https://i.imgur.com/J3Xq0z5.jpg">
+      <div class="storyContent"> 
+       <h2>Title of the page</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="storyDate"><strong>Date: </strong> 11.11.18</p>
+        <a href="#">Read more...</a>
+    </div>
+        </article> 
         
-    </aside>
+    </section>
+    </div>
 
     
     <footer>
-        <div>
+        <div class="footerRightSide">
             <ul class="footerMenu">
                 <li class="home">
-                    <a href="#">Home</a>
+                    <a href="#">
+                        < Home</a>
                 </li>
                 <li class="stories">
-                    <a class="active" href="#">Stories</a>
+                    <a class="active" href="#">
+                        < Stories</a>
                 </li>
                 <li class="info">
-                    <a href="#">Useful Info</a>
+                    <a href="#">
+                        < Useful Info</a>
                 </li>
                 <li class="about">
-                    <a href="#">About</a>
+                    <a href="#">
+                        < About</a>
                 </li>
             </ul>
-            <div> <img src="logoFooter" /> </div>
-            <div>© TravelMate 2018 All Rights Reserved.</div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                    target="_blank">CC 3.0 BY</a></div>
+            <div class="footerLogo">
+                <img src="img/logo.png" />
+            </div>
+            <div class="footerCopyright">© TravelMate 2018 All Rights Reserved.
+                <br> Icons made by
+                <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
         </div>
-        <div>
+        <div class="footerLeftSide">
             <p>Contacts</p>
-            <img src="#" /> Boschdijk 272, 5612HJ, Eindhoven
-            <img src="#" /> info@travelmate.eu
-        </div>
 
+            <i class="fas fa-map-marker"></i> Boschdijk 272, 5612HJ, Eindhoven
+            <br>
+            <i class="fas fa-envelope"></i> info@travelmate.eu
+            <br>
+        </div>
     </footer>
 </body>
 
