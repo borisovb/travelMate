@@ -69,7 +69,7 @@ nav {
     display: flex;
     width: 100%;
     height: 450px;
-    background: url('img/headerBackground.jpeg') no-repeat center;
+    background: url('img/headerBackground.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -165,6 +165,20 @@ nav {
     height: 70px;
     background-color: #40A05D;
 }
+.secTitleSection {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #F0FFEA;
+}
+.secNav{
+    margin: auto;
+}
+.secNav a{
+    color: #000;
+    text-decoration: none;
+}
+
 .titleSection p{
     margin: auto;
     font-family: 'Kavivanar', sans-serif;
@@ -179,7 +193,12 @@ nav {
 }
 aside {
     margin: auto;
-    padding-right: 10%;  
+    padding-left: 2%;
+    padding-right: 10%;
+}
+.infoText {
+    margin-right: 10%;
+    margin-left: 10%;
 }
 footer {
     display: flex;
@@ -239,8 +258,8 @@ footer {
   
   .gear
   {
-      -webkit-animation-name:             rotate; 
-      -webkit-animation-duration:         60s; 
-      -webkit-animation-iteration-count:  infinite;
+      -webkit-animation-name: rotate; 
+      -webkit-animation-duration: 60s; 
+      -webkit-animation-iteration-count: infinite;
       -webkit-animation-timing-function: linear;
   }
