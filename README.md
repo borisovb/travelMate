@@ -9,4 +9,4 @@
 - **Group:** [J] 
 - **Class:** E-S23
 - **Members:** Boris Borisov, Veselin Nasev
-- **Production Link:** http://i380570.hera.fhict.nl/travelmates/
+- **Production Link:** http://i380570.hera.fhict.nl/travelmate/
