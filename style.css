@@ -192,6 +192,7 @@ nav {
 }
 
 .wrapper {
+    background: #FFF;
     display: flex;
     margin: 0 10%;
 }
