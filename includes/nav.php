@@ -20,14 +20,21 @@
             <a href="about.php">About</a>
         </li>
     </ul>
-
+   
     <ul class="authMenu">
+    <?php if (empty($_SESSION['id'])) { ?>
         <li class="login">
             <a href="javascript:void(0)" onclick="openLogin()">Login</a>
         </li>
         <li class="register">
             <a href="javascript:void(0)" onclick="openRegister()">Register</a>
         </li>
+        <?php } else { ?>
+        <li class="register">
+       <a href="javascript:void(0)" onclick="openProfile()"> <i class="far fa-user-circle"></i>  Your Profile</a>
+        </li>
+        <?php } ?>
     </ul>
+   
 
 </nav>

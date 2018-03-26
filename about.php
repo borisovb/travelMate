@@ -1,22 +1,39 @@
+<?php
+require "auth/config.php";
+require 'auth/userClass.php';
+require 'auth/formValidation.php';
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <?php
-    $pageName = "Stories";
+    $pageName = "About";
     require_once 'includes/head.php' 
     ?>
     <script src="scripts/inputValidation.js"></script>
 </head>
 
 <body id="main">
+<div id="errorMessages" class="errorMessages">
+<?php
+if(!empty($errorMsg)){
+    echo '<p>' . $errorMsg . '</p>';
+    echo '<div class="errorMessagesCloseButton"><a href="javascript:void(0)" class="closebtn" onclick="closeErrorMsg()"><i class="fas fa-times"></i></a></div>';
+}
+?>
+</div>
     <header>
         <?php 
-        require_once 'includes/nav.php';
-
-        require_once 'includes/asideLogin.php';
-
-        require_once 'includes/asideRegister.php';
+            require 'includes/nav.php';
+    
+            if (empty($_SESSION['id'])) {
+                require 'includes/asideLogin.php';
+                require 'includes/asideRegister.php';
+            } 
+            else {
+                require 'includes/asideProfile.php';
+            }
         ?>
     </header>
 

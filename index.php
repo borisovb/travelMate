@@ -1,21 +1,39 @@
+<?php
+require "auth/config.php";
+require 'auth/userClass.php';
+require 'auth/formValidation.php';
+?>
+
 <!DOCTYPE html>
 <html>
-
 <head>
     <?php
     $pageName = "Homepage";
-    require_once 'includes/head.php' 
+    require 'includes/head.php' 
     ?>
 </head>
 
 <body id="main">
+<div id="errorMessages" class="errorMessages">
+<?php
+if(!empty($errorMsg)){
+    echo '<p>' . $errorMsg . '</p>';
+    echo '<div class="errorMessagesCloseButton"><a href="javascript:void(0)" class="closebtn" onclick="closeErrorMsg()"><i class="fas fa-times"></i></a></div>';
+}
+?>
+</div>
     <header>
         <?php 
-        require_once 'includes/nav.php';
+        require 'includes/nav.php';
+ 
+        if (empty($_SESSION['id'])) {
+            require 'includes/asideLogin.php';
+            require 'includes/asideRegister.php';
+        } 
+        else {
+            require 'includes/asideProfile.php';
+        }
 
-        require_once 'includes/asideLogin.php';
-
-        require_once 'includes/asideRegister.php';
         ?>
     </header>
 
@@ -48,14 +66,14 @@
     <section class="joinUsSection">
         <div>
             <p>JOIN US</p>
-            <button onclick="openLogin()" class="button button1">Login</button>
+            <button onclick="openLogin()" class="button">Login</button>
             <br />
-            <button onclick="openRegister()" class="button button1">Register</button>
+            <button onclick="openRegister()" class="button">Register</button>
 
         </div>
     </section>
     <?php
-    require_once 'includes/footer.php' 
+    require 'includes/footer.php' 
     ?>
     </body>
 </html>

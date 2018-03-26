@@ -1,7 +1,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Travel Mate | <?= $pageName ?> </title>
-    <meta name="description" content="">
+    <meta name="description" content="TravelMate - Travel from home">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">

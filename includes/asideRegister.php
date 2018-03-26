@@ -1,15 +1,15 @@
 <div id="asideRegister" class="aside">
     <a href="javascript:void(0)" class="closebtn" onclick="closeRegister()">&times;</a>
-    <form>
+    <form method="post" action="" name="signup">
         <h2>REGISTER</h2>
-        <input type="text" name="username" placeholder="Username" id="username" required>
+        <input type="text" name="usernameReg" placeholder="Username" id="usernameReg" required>
         <br>
-        <input type="email" name="email" placeholder="Email" id="email" required>
+        <input type="email" name="emailReg" placeholder="Email" id="emailReg" required>
         <br>
-        <input type="password" name="password" placeholder="Password" id="password" required>
+        <input type="password" name="passwordReg" placeholder="Password" id="passwordReg" required>
         <br>
-        <input type="password" name="repeatPassword" placeholder="Repeat Password" id="RepeatPassword" required>
+        <input type="password" name="passwordRegRepeat" placeholder="Repeat Password" id="passwordRegRepeat" required>
         <br>
-        <button class="button button1">Register</button>
+        <input type="submit" class="button button1" name="signupSubmit" value="Signup">
     </form>
 </div>

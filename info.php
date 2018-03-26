@@ -1,22 +1,25 @@
+<?php
+require "auth/config.php";
+require 'auth/userClass.php';
+require 'auth/formValidation.php';
+require 'auth/onlyUsersPage.php';
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <?php
-    $pageName = "Useful Info";
-    require_once 'includes/head.php' 
+        $pageName = "Useful Info";
+        require 'includes/head.php' 
     ?>
-        <script src="scripts/loadContent.js"></script>
+    <script src="scripts/loadContent.js"></script>
 </head>
 
 <body id="main">
     <header>
         <?php 
-        require_once 'includes/nav.php';
-
-        require_once 'includes/asideLogin.php';
-
-        require_once 'includes/asideRegister.php';
+            require 'includes/nav.php';
+            require 'includes/asideProfile.php';
         ?>
     </header>
 
@@ -36,7 +39,7 @@
         </section>
     </div>
     <?php
-    require_once 'includes/footer.php' 
+    require 'includes/footer.php'
     ?>
 </body>
 
