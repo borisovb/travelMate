@@ -2,6 +2,25 @@
 require "auth/config.php";
 require 'auth/userClass.php';
 require 'auth/formValidation.php';
+
+if (!empty($_POST['SendMail'])) {
+$fromName = htmlspecialchars($_POST['toName']);
+$fromEmail = htmlspecialchars($_POST['toEmail']);
+$checkEmail = preg_match('~^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.([a-zA-Z]{2,4})$~i', $fromEmail);
+$message = htmlspecialchars($_POST['Message']);
+
+if (strlen(trim($fromEmail)) > 1 || strlen(trim($fromName)) > 1 || strlen(trim($message)) > 1) {
+    if ($checkEmail) {
+        $subject = 'From: ' . $fromEmail . ' ' . $fromName;
+        mail('xazssqaw12@abv.bg', $subject, $message);
+        $errorMsg = 'Message sent!';
+    } else {
+        $errorMsg = 'Please enter a vaild email!';
+    }
+} else {
+    $errorMsg = 'Please fill in all required fields.';
+}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,18 +64,18 @@ if(!empty($errorMsg)){
 
         <section class="aboutLeft">
             <div class="aboutForm">
-                <form name="Form">
+                <form name="Form" method="POST">
                     <label for="name">Name:</label>
-                    <input type="text" name="Name" value="Name" id="name">
+                    <input type="text" name="toName" placeholder="Name" id="name" require>
                     <br>
                     <label for="email"> Email:</label>
-                    <input type="text" name="Email" value="Email" id="email">
+                    <input type="text" name="toEmail" placeholder="Email" id="email" require>
                     <br>
                     <label for="message">Message:</label>
 
-                    <textarea rows="4" cols="50"> Your message...</textarea>
+                    <textarea rows="4" cols="50" name="Message" placeholder="Your message..." require></textarea>
                     <br>
-                    <input type="submit" onclick="validate()" value="Send">
+                    <input type="submit" onclick="validate()" name="SendMail" value="Send" />
                 </form>
             </div>
         </section>
