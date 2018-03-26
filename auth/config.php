@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'travelmate');
-define("BASE_URL", "/travelMate/");
+define('DB_SERVER', 'studmysql01.fhict.local');
+define('DB_USERNAME', 'dbi380570');
+define('DB_PASSWORD', 'tainaParola123');
+define('DB_DATABASE', 'dbi380570');
+define("BASE_URL", "http://i380570.hera.fhict.nl/travelmate/");
 
 
 function getDB() {
